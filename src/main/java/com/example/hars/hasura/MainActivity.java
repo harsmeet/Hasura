@@ -10,12 +10,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 public class MainActivity extends AppCompatActivity {
 
 TextView textView;
 EditText editText;
-Button button, intentB;
+Button button;
     private static final String TAG="MainActivity";
 
     @Override
@@ -24,19 +23,14 @@ Button button, intentB;
         setContentView(R.layout.activity_main);
 
          textView=(TextView)findViewById(R.id.textView2);
-//        setting the text for the text view
-//        textView.setText("hello_World");
         editText=(EditText)findViewById(R.id.editText2);
         button=(Button)findViewById(R.id.button2);
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Toast.makeText(MainActivity.this,"Button Clicked",Toast.LENGTH_SHORT).show();
 
                 String enteredText=editText.getText().toString();
                 if (enteredText.isEmpty()) {
-//                    show alert
                     showAlert();
                 }else{
 //replace text in textView
@@ -56,7 +50,7 @@ Button button, intentB;
 private void showAlert(){
 //    Building the Dialog
     AlertDialog.Builder builder=new AlertDialog.Builder(this);
-    builder.setTitle("Khalli");
+    builder.setTitle("Empty");
     builder.setMessage("No string to replace");
 //    also access neutra button
     builder.setNeutralButton("Cancel", new DialogInterface.OnClickListener() {

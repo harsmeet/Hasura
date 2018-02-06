@@ -1,10 +1,7 @@
 <resources>
     <string name="app_name">Hasura</string>
-
     <string name="hello_World">HELLO_EVERYONE _Hows You ??</string>
-
     <string name="Set_Text"> NEW TEXT HERE</string>
-
     <string name="button_name">Hey !!! Click It Man !!! </string>
     <string name="bottle_go">Go !!!!!!</string>
     <string name="intent">Click For Next Activity</string>
